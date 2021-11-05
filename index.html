@@ -19,30 +19,26 @@
 
     <!-- Local CSS -->
     <link href="css/tooplate-style.css" rel="stylesheet">
+
+    <!-- Local CSS home -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
 </head>
 <body>
-<!-- Navbar-->
-<header class="header">
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Transparent Nav</a>
-            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span
-                            class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<div id="home_page"></div>
+<div class="mt-50"></div>
+
+<div class="topnav">
+    <a href="#home_page" class="active" id="home">Accueil</a>
+    <a href="">A propos de nous</a>
+    <a href="">Nos projets</a>
+    <a href="#contact-us" id="contact_us">Nous contacter</a>
+    <a href="login.html">Se connecter</a>
+</div>
+
 <div class="tm-container-fluid">
+
     <!-- Section 1 : Nano Folio -->
     <section class="tm-site-header tm-flex-center tm-mb-50 tm-bgcolor-1 tm-border-rounded">
         <i class="fas fa-heart fa-3x"></i>
@@ -135,34 +131,58 @@
                     <img src="img/tn-img-12.jpg" alt="Gallery item" class="img-fluid"/>
                 </a>
             </div>
+            <div class="tm-gallery-item nature city">
+                <a href="img/tn-img-13.jpg">
+                    <img src="img/tn-img-13.jpg" alt="Gallery item" class="img-fluid"/>
+                </a>
+            </div>
+            <div class="tm-gallery-item portraits">
+                <a href="img/tn-img-14.jpg">
+                    <img src="img/tn-img-14.jpg" alt="Gallery item" class="img-fluid"/>
+                </a>
+            </div>
+            <div class="tm-gallery-item nature">
+                <a href="img/tn-img-15.jpg">
+                    <img src="img/tn-img-15.jpg" alt="Gallery item" class="img-fluid"/>
+                </a>
+            </div>
+            <div class="tm-gallery-item portraits city">
+                <a href="img/tn-img-16.jpg">
+                    <img src="img/tn-img-16.jpg" alt="Gallery item" class="img-fluid"/>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Section 4 : Contact Us -->
-    <section class="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
+    <section class="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded" id="contact-us">
         <div class="tm-contact-header tm-flex-center">
             <i class="fas fa-map-pin fa-3x"></i>
             <h2>Contact</h2>
         </div>
         <div class="tm-contact-info">
             <address class="tm-mb-30">
-                120 Curabitur sed tortor ultrices,
-                congue odio eget, posuere urna.
-                Praesent at rhoncus 10680
+                53 Cr Albert Thomas, 69003 Lyon
             </address>
-            <div class="tm-text-white tm-mb-40">Tel: <a href="tel:0100200340" class="tm-link-white">010-020-0340</a>
+            <div class="tm-text-white tm-mb-40">Tel: <a href="tel:0426290101" class="tm-link-white">04 26 29 01 01</a>
             </div>
             <div class="tm-flex">
-                <a href="https://facebook.com" class="tm-social-link"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="tm-social-link"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank" class="tm-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="tm-social-link"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="tm-contact-form-container">
             <form id="contact-form" action="" method="POST" class="tm-contact-form">
-                <input type="text" name="name" placeholder="name" required=""/>
-                <input type="email" name="email" placeholder="email" required=""/>
-                <textarea rows="5" name="message" class="tm-mb-30" placeholder="message" required=""></textarea>
+                <label>
+                    <input type="text" name="name" placeholder="name" required=""/>
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="email" required=""/>
+                </label>
+                <label>
+                    <textarea rows="5" name="message" class="tm-mb-30" placeholder="message" required=""></textarea>
+                </label>
                 <button type="submit" class="tm-right tm-btn-submit">send</button>
             </form>
         </div>
@@ -170,7 +190,10 @@
 
     <!-- Footer -->
     <footer class="tm-footer">
-        Copyright 2020 Nano Folio - Design: <a rel="sponsored" href="https://www.tooplate.com" class="tm-link-gray">Tooplate</a>
+        Copyright 2021 Noloax - Design:
+        <a rel="sponsored" href="https://github.com/nmacoley/TpEsgiGitHub" class="tm-link-gray" target="_blank">
+            ESGI B2
+        </a>
     </footer>
 </div>
 
@@ -208,15 +231,19 @@
             type: 'image',
             gallery: {enabled: true}
         });
+
+        // Navbar
+        $("#contact_us").click(function (){
+            $(this).addClass("active");
+            $("#home").removeClass("active");
+        })
+
+        $("#home").click(function (){
+            $(this).addClass("active");
+            $("#contact_us").removeClass("active");
+        })
     });
 </script>
-<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
 
 </body>
 </html>
